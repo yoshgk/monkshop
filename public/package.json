@@ -4,6 +4,6 @@
     "sqlite3": "^5.1.7"
   },
   "scripts": {
-    "start": "node app.js"
+    "start": "node db/app.js"
   }
 }
