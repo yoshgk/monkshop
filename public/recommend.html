@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe guide TEMPLATE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="black-bar">
+
+        <p>Gratis verzending vanaf €25,-</p>
+        <p>Voor 22:00 besteld = Morgen in huis</p>
+        <p>Gratis retourneren</p>
+
+    </section>
+
+
+
+    <section class="search-section">
+
+        <a href="index.html">
+            <img src="images/monklogo.png" alt="logo of monk">
+        </a>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+
+        <section class="search-section-icons">
+            <img src="images/dutchflag.png" alt="dutch flag">
+            <img src="images/accounticon.png" alt="account icon">
+            <a href="shoppingcart.html">
+                <img src="images/exportshoppingcart.png" alt="shopping cart icon">
+                <span id="cart-quantity">0</span>
+            </a>
+        </section>
+
+    </section>
+
+
+    <section class="shoe-guide-text">
+        <p>SHOE SIZE GUIDE</p>
+    </section>
+
+
+
+    <section class="shoe-guide-section">
+        <p>We Recommend:</p>
+    </section>
+
+    <!-- recommended shoes displayed here -->
+    <section class="shoe-recommend" id="shoe-recommend">
+        <!-- goes to previous shoe -->
+        <button class="arrow left-arrow" id="left-arrow" style="display: none;">&#9664;</button>
+        <div class="recommended-shoe-container" id="recommended-shoe-container">
+        </div>
+        <!-- goes to next shoe -->
+        <button class="arrow right-arrow" id="right-arrow" style="display: none;">&#9654;</button>
+    </section>
+    
+    
+
+    <div class="center-container">
+        <a href="shoeguide05.html">
+            <button class="previous-button">Previous</button>
+        </a>
+    </div>
+
+    <img class="footer-image" src="images/footer.png" alt="">
+
+    <script src="js/shoeGuide.js"></script>
+    <script src="js/loadShoes.js"></script>
+    <script src="js/shoppingcart.js"></script>
+</body>
+</html>

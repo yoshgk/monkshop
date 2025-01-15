@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Index</title>
+</head>
+<body>
+
+    <section class="black-bar">
+
+        <p>Gratis verzending vanaf €25,-</p>
+        <p>Voor 22:00 besteld = Morgen in huis</p>
+        <p>Gratis retourneren</p>
+
+    </section>
+
+
+
+    <section class="search-section">
+
+        <a href="index.html">
+            <img src="images/monklogo.png" alt="logo of monk">
+        </a>
+        <!-- admin page for future purpose -->
+        <!-- <a href="admintest.html">to admin</a> -->
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+
+        <section class="search-section-icons">
+            <img src="images/dutchflag.png" alt="dutch flag">
+            <img src="images/accounticon.png" alt="account icon">
+            <a href="shoppingcart.html">
+                <img src="images/exportshoppingcart.png" alt="shopping cart icon">
+                <span id="cart-quantity">0</span>
+            </a>
+        </section>
+
+    </section>
+
+
+
+    <section class="navbar">
+
+        <h1>BUILT FOR <span id="dynamic-word">CLIMBING</span></h1>
+
+        <ul class="navbar-items">
+            <li id="current-link" data-word="CLIMBING">FOOTWEAR</li>
+            <li data-word="NATURE">OUTDOORS</li>
+            <li data-word="CLIMBING">BASICS</li>
+            <li data-word="CLIMBING">CLOTHING</li>
+            <li data-word="KNOWLEDGE">BOOKS</li>
+            <li data-word="CLIMBING">TRAINING</li>
+            <li data-word="CLIMBING">GIFTS</li>
+            <li data-word="CLIMBING">VOUCHERS</li>
+        </ul>
+
+    </section>
+
+
+    <section class="shoe-banner">
+        <img src="images/Shoemainpage.png" alt="">
+
+        <div class="grey-box"></div>
+    
+        <div class="black-box">
+            WHICH SHOE IS THE BEST FIT FOR YOU?
+        </div>
+    
+        <button class="check-button" onclick="location.href='shoeguide01.html'">DO THE CHECK</button>
+    </section>
+    
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+SHOE FILTER SYSTEM: -->
+    <main>
+        <section class="filter-system">
+            <h1 onclick="toggleDropdown('color-options', this)">Color<img src="images/drop-down-arrow.png" class="dropdown-icon" alt=""></h1>
+            <div class="dropdown-content" id="color-options">
+                <section class="color-options">
+                    <a href="" id="cyan">
+                        <div class="color-circle" style="background-color: cyan;"></div>
+                    </a>
+        
+                    <a href="" id="blue">
+                        <div class="color-circle" style="background-color: blue;"></div>
+                    </a>
+        
+                    <a href="" id="black">
+                        <div class="color-circle" style="background-color: black;"></div>
+                    </a>
+                        
+                    <a href="" id="yellow">
+                        <div class="color-circle" style="background-color: yellow;"></div>
+                    </a>
+                       
+                    <a href="" id="purple">
+                        <div class="color-circle" style="background-color: purple;"></div>
+                    </a>
+                      
+                    <a href="" id="green">
+                        <div class="color-circle" style="background-color: #c1ed2e;"></div>
+                    </a>
+                      
+                    <a href="" id="pink">
+                        <div class="color-circle" style="background-color: #ffaab9;"></div>
+                    </a>
+                        
+                    <a href="" id="orange">
+                        <div class="color-circle" style="background-color: orange;"></div>
+                    </a>
+                        
+                    <a href="" id="white">
+                        <div class="color-circle" style="background-color: white;"></div>
+                    </a>
+                       
+                    <a href="" id="red">
+                        <div class="color-circle" style="background-color: red;"></div>
+                    </a>
+        
+                    <a href="" id="gray">
+                        <div class="color-circle" style="background-color: grey;"></div>
+                    </a>
+                </section>
+            </div>
+    
+    
+            <h1 onclick="toggleDropdown('sizes-filter', this)">Size<img src="images/drop-down-arrow.png" class="dropdown-icon" alt=""></h1>
+            <div class="dropdown-content" id="sizes-filter">
+                <section class="sizes-filter">
+                   <!-- range from 4 to 49 boxes -->
+                </section>
+            </div>
+    
+    
+            <h1 onclick="toggleDropdown('aggressiveness-options', this)">Aggressiveness<img src="images/drop-down-arrow.png" class="dropdown-icon" alt=""></h1> 
+            <div class="dropdown-content" id="aggressiveness-options">
+                <section class="checkbox-layout">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="none">
+                        <p>None</p>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="light">
+                        <p>Light</p>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="aggressive">
+                        <p>Aggressive</p>
+                    </div>
+                </section>
+            </div>
+      
+    
+            <h1 onclick="toggleDropdown('closure-options', this)">Closure type<img src="images/drop-down-arrow.png" class="dropdown-icon" alt=""></h1>     
+            <div class="dropdown-content" id="closure-options">
+                <section class="checkbox-layout">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="closure-velcro">
+                        <p>Velcro</p>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="slippers">
+                        <p>Slippers</p>   
+                    </div>
+                </section>
+            </div>
+    
+    
+            <h1 onclick="toggleDropdown('rubber-options', this)">Rubber type<img src="images/drop-down-arrow.png" class="dropdown-icon" alt=""></h1> 
+            <div class="dropdown-content" id="rubber-options">
+                <section class="checkbox-layout">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="vibramXsGrip2">
+                        <p>Vibram XS Grip 2</p>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="stealthC4Rubber">
+                        <p>Stealth C4-Rubber</p>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="vibramXsEdge">
+                        <p>Vibram XS Edge</p>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="realHonor">
+                        <p>Real Honor</p>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="realSupreme">
+                        <p>Real Supreme</p>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="scarpaVision">
+                        <p>Scarpa Vision</p>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="frixionBlack">
+                        <p>FriXion Black</p>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="zenithQuattro">
+                        <p>Zenith Quattro</p>
+                    </div>
+                </section>
+            </div>
+    
+            <h1 onclick="toggleDropdown('vegan-options', this)">Vegan<img src="images/drop-down-arrow.png" class="dropdown-icon" alt=""></h1>
+            <div class="dropdown-content" id="vegan-options">
+                <section class="checkbox-layout">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="yes">
+                        <p>Vegan</p>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="no">
+                        <p>Not vegan</p>
+                    </div>
+                </section>
+            </div>
+           
+           
+            <h1 onclick="toggleDropdown('footshape-options', this)">Foot width<img src="images/drop-down-arrow.png" class="dropdown-icon" alt=""></h1>
+            <div class="dropdown-content" id="footshape-options">
+                <section class="checkbox-layout">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="narrow">
+                        <p>Narrow</p>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="normal">
+                        <p>Normal</p>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="wide">
+                        <p>Wide</p>
+                    </div>
+                </section>
+            </div>
+    
+            <h1 onclick="toggleDropdown('brand-options', this)">Brand<img src="images/drop-down-arrow.png" class="dropdown-icon" alt=""></h1>
+            <div class="dropdown-content" id="brand-options">
+                <section class="checkbox-layout">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="scarpa">
+                        <p>Scarpa</p>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="laSportiva">
+                        <p>La Sportiva</p>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="unparallel">
+                        <p>Unparallel</p>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="fiveTen">
+                        <p>Five Ten</p>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="boreal">
+                        <p>Boreal</p>
+                    </div>
+                </section>
+            </div>
+        </section>
+    
+        <section class="shoe-tiles" id="shoe-container">
+            <!-- this is where each show will be displayed -->
+        </section>
+    </main>
+    
+    <script src="db/app.js"></script>
+    <script src="js/loadShoes.js"></script>
+    <script src="js/shoppingcart.js"></script>
+    <script src="js/script.js"></script>
+
+    <img class="footer-image" src="images/footer.png" alt="">
+    
+</body>
+</html>

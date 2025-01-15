@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Shoe page</title>
+</head>
+<body>
+    <section class="black-bar">
+
+        <p>Gratis verzending vanaf €25,-</p>
+        <p>Voor 22:00 besteld = Morgen in huis</p>
+        <p>Gratis retourneren</p>
+
+    </section>
+
+
+
+    <section class="search-section">
+
+        <a href="index.html">
+            <img src="images/monklogo.png" alt="logo of monk">
+        </a>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+
+        <section class="search-section-icons">
+            <img src="images/dutchflag.png" alt="dutch flag">
+            <img src="images/accounticon.png" alt="account icon">
+            <a href="shoppingcart.html">
+                <img src="images/exportshoppingcart.png" alt="shopping cart icon">
+                <span id="cart-quantity">0</span>
+            </a>
+        </section>
+
+    </section>
+
+
+    <section class="navbar">
+
+        <h1>BUILT FOR <span id="dynamic-word">CLIMBING</span></h1>
+
+        <ul class="navbar-items">
+            <li data-word="CLIMBING">FOOTWEAR</li>
+            <li data-word="NATURE">OUTDOORS</li>
+            <li data-word="CLIMBING">BASICS</li>
+            <li data-word="CLIMBING">CLOTHING</li>
+            <li data-word="KNOWLEDGE">BOOKS</li>
+            <li data-word="CLIMBING">TRAINING</li>
+            <li data-word="CLIMBING">GIFTS</li>
+            <li data-word="CLIMBING">VOUCHERS</li>
+        </ul>
+
+    </section>
+
+
+    <section class="shoe-information-page">
+
+        <section class="shoe-information-upper">
+            <section>
+                <img src="" alt="">
+            </section>
+    
+            <section>
+                <h1></h1>
+                <h2></h2>
+                <h3></h3>
+                <h4 id="shoe-page-select-size-text">Select a size</h4>
+
+                <div class="sizes-filter">
+                    <!-- sizes of chosen shoe should be generated just like from the index page-->
+                </div>
+                <button class="shopping-cart-add-button" onclick="addToCart()">Add to shoppingcart</button>
+            </section>
+        </section>
+
+        <section class="shoe-information-text">
+            <h1>Product description:</h1>
+            <p></p>
+        </section>
+
+        <img class="trustpilot-image" src="images/trustpilot.png" alt="">
+        
+        
+    </section>
+    
+    <img class="footer-image" src="images/footer.png" alt="">
+    <script src="js/loadShoes.js"></script>
+    <script src="js/shoppingcart.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
